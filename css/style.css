@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+html,body{
+	height: 100%;
+	background-color: #fafafa;
+}
+
+/****  CLASSES PADRAO ****/
+
+.center{
+	max-width: 935px;
+	margin: 0 auto;
+}
+
+.flex{display: flex;}
+.w50{width: 50%;}
+.w100{width: 100%;}
+.clear{clear: both;}
+
+
+/****  CLASSES PADRAO ****/
+
+
+
+
+section.login-instagram{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+
+div.imagem-slides{
+	width: 50%;
+	padding-top: 60%;
+	margin: 50px 0 0 0;
+	background-image: url('../img/dispositivo.png');
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+div.img-wraper-slider{
+	opacity: 0;
+	width: 255px;
+	height: 478px;
+	position: absolute;
+	top: 24px;
+	left: 150px;
+	transition: 2s;
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div.login{
+	width: 50%;
+	max-width: 350px;
+	height: 365px;
+	margin: 50px 0;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	position: relative;
+}
+
+div.login img{
+	display: block;
+	margin: 30px auto 20px auto;
+	cursor: pointer;
+}
+
+div.formulario{
+	width: 100%;
+	padding: 0 50px;
+}
+
+div.form-wraper{
+	position: relative;
+}
+
+div.form-wraper input[type=text],div.form-wraper input[type=password]{
+	width: 100%;
+	padding: 8px 15px;
+	margin: 5px 0px;
+	border: 1px solid #dbdbdb;
+}
+
+div.form-wraper input[type=submit]{
+	display: block;
+	width: 100%;
+	height: 35px;
+	transition: background-color 0.5s;
+	border: 0;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: rgba(0,149,246,0.4);
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+div.block{
+	display: block;
+	width: 100%;
+	height: 35px;
+	transition: background-color 0.5s;
+	border: 0;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 0;
+}
+
+::-webkit-input-placeholder {font-size: 11px;}
+:-ms-input-placeholder {font-size: 11px;}
+::placeholder {font-size: 11px;}
+
+div.form-wraper input[type=text],div.form-wraper input[type=password]:focus{outline: none;}
+
+div.line{
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: relative;
+}
+
+div.line h4{
+	color: #8e8e8e;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: normal;
+	text-align: center;
+	padding: 0 10px;
+	background-color: white;
+	position: absolute;
+	top: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+div.ln1{
+	width: 100%;
+	height: 1px;
+	background-color: rgba(150,150,150,0.7);
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+div.external{
+	width: 100%;
+	margin: 30px 0px;
+	text-align: center;
+}
+
+div.external i{
+	display: inline-block;
+	font-size: 20px;
+	color: #00376b;
+	cursor: pointer;
+}
+
+div.external p{
+	color: #00376b;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	margin: -5px 0 20px 5px;
+}
+div.external span{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	cursor: pointer;
+	color: #00376b;
+}
+
+div.cadastrar{
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	height: 70px;
+	margin: 45px 0 15px 0;
+	padding: 25px 0;
+	font-size: 15px;
+	text-align: center;
+	border: 1px solid #dbdbdb;
+
+}
+
+div.appstore{
+	width: 150px;
+	height: 50px;
+	margin-top: 20px;
+	background-image: url('../img/app-store.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+div.googleplay{
+	width: 150px;
+	height: 50px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+	background-image: url('../img/google-play.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+footer{
+   background-color: #fafafa;
+   padding-left: 16px;
+   padding-right: 16px;
+   max-width: 900px;
+   padding-bottom: 70px;
+   text-align: center;
+	margin: 70px auto 0 auto;
+}
+
+footer a{
+	margin: 25px 15px;
+	color: #8e8e8e;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 968px){
+	div.flex{flex-wrap: wrap;}
+	div.imagem-slides{display: none;}
+	div.login{left: 50%;transform: translateX(-50%);margin: 25px 0;width: 100%;}
+	div.formulario{padding: 0 30px;}
+	section.login-instagram{padding: 0 10%;}
+}
+
+@media screen and (max-width: 400px){
+	div.googleplay,div.appstore{width: 130px;float: none;margin:0 auto;}
+}
